@@ -8,5 +8,11 @@ use PHPUnit\Framework\TestCase;
 
 final class ExampleTest extends TestCase
 {
-
+    /**
+     * @test
+     */
+    public function assertsFalse(){
+        $this->assertsFalse(true);
+        $this->assertIsInt('2');
+    }
 }
